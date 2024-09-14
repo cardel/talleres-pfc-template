@@ -11,4 +11,12 @@ class MaxlistTest extends AnyFunSuite {
   test("MaxIt test 1 - Lista con varios elementos") {
     assert(obj.maxIt(List(1, 4, 21, 16, 33, 2, 6, 13, 9)) == 33)
   }
+
+  test("MaxIt test 2 - lista vacia")
+  {
+    intercept[IllegalArgumentException]
+      {
+        obj.maxIt(List())
+      }
+  }
 }
