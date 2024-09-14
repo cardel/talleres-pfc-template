@@ -1,6 +1,6 @@
 package taller
 
-class BuscarLista() {
+class BuscarLista {
   def buscarElemento(lista: List[Int], elemento: Int): Boolean = {
   lista match {
     case Nil => false
